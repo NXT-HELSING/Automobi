@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    // Existing Methods
     public function home()
     {
         return view('home');
@@ -28,5 +29,21 @@ class PageController extends Controller
     public function contact()
     {
         return view('contact');
+    }
+
+    // New Methods
+    public function booking()
+    {
+        return view('booking');
+    }
+
+    public function technicians()
+    {
+        return view('technicians');
+    }
+
+    public function testimonial()
+    {
+        return view('testimonial');
     }
 }
